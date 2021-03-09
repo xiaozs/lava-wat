@@ -21,6 +21,7 @@ const config: webpack.Configuration = {
         libraryTarget: "umd",
         globalObject: "this"
     },
+    externals: ["lavats", "lavats-wasm"],
     plugins: [new CleanWebpackPlugin()],
     devtool: "source-map"
 };
